@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const cityPages: MetadataRoute.Sitemap = cities.map(city => ({
-    url: `${BASE}/placas-decorativas-${city.slug}`,
+    url: `${BASE}/ciudad/${city.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.8,

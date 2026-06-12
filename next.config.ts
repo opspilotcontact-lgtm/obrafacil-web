@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/placas-decorativas-:city',
+        destination: '/ciudad/:city',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

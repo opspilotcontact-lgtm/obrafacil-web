@@ -1,0 +1,163 @@
+export interface City {
+  slug: string;
+  name: string;
+  province: string;
+  region: string;
+  deliveryTime: string;
+  isWarehouse: boolean;
+  metaTitle: string;
+  metaDescription: string;
+  h1: string;
+  introText: string;
+}
+
+export const cities: City[] = [
+  {
+    slug: 'cordoba',
+    name: 'Córdoba',
+    province: 'Córdoba',
+    region: 'Andalucía',
+    deliveryTime: '24h',
+    isWarehouse: true,
+    metaTitle: 'Placas Decorativas en Córdoba | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Córdoba. Recogida en almacén o envío 24h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Córdoba',
+    introText: 'En Córdoba sabemos lo que es vivir con calor — y también sabemos que reformar un baño o una cocina en pleno verano cordobés es lo último que te apetece. Por eso en ObraFácil, desde nuestro almacén en la provincia, te ofrecemos placas decorativas SPC que se instalan directamente sobre el azulejo existente, sin obra, sin polvo y sin escombros. Tanto si vives en el casco histórico cerca de la Mezquita como en barrios nuevos como Poniente o Zoco, te las acercamos en 24 horas o puedes recogerlas directamente. Ideales para pisos de alquiler, viviendas heredadas en la Sierra o reformas rápidas en locales del centro.',
+  },
+  {
+    slug: 'sevilla',
+    name: 'Sevilla',
+    province: 'Sevilla',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Sevilla | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Sevilla. Envío 24-48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Sevilla',
+    introText: 'Sevilla, con sus casas de techos altos en Triana, los pisos del Cerro del Águila o los adosados de Montequinto, tiene miles de baños y cocinas que piden una renovación sin el drama de una obra tradicional. Las placas SPC de ObraFácil se pegan directamente sobre tu azulejo antiguo — sin romper nada, sin albañil, sin semanas de obra. En 24-48 horas las tienes en tu puerta desde nuestro almacén en Córdoba. Efecto mármol Calacatta para un baño señorial, ónix turquesa para un salón que impacte en redes, o palillería de roble para ese cabecero que llevas meses queriendo hacer tú mismo.',
+  },
+  {
+    slug: 'malaga',
+    name: 'Málaga',
+    province: 'Málaga',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Málaga | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Málaga. Envío 24-48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Málaga',
+    introText: 'Málaga es la capital del turismo residencial en la Costa del Sol — y eso significa miles de apartamentos y pisos que necesitan una puesta a punto rápida y económica. Tanto si tienes un piso en el Soho, un apartamento de alquiler vacacional en Torremolinos o una casa en Teatinos, las placas decorativas SPC de ObraFácil te permiten renovar baños y cocinas en una tarde. Sin obra, sin polvo, sin ruido para los vecinos. Envío desde Córdoba en 24-48 horas. El acabado mármol Marquina negro está arrasando entre los propietarios de Airbnb de la zona.',
+  },
+  {
+    slug: 'granada',
+    name: 'Granada',
+    province: 'Granada',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Granada | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Granada. Envío 24-48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Granada',
+    introText: 'Granada, entre la Alhambra y Sierra Nevada, tiene un parque de viviendas que va desde los cármenes del Albaicín hasta los pisos del Zaidín o los chalets de la Zubia. Muchas de estas viviendas tienen azulejos de los años 70-80 que piden a gritos una actualización. Con las placas SPC de ObraFácil puedes transformar tu baño o cocina sin tocar un azulejo — se pegan encima directamente. Ideales para el clima granadino: impermeables, resistentes al frío de invierno y facilísimas de limpiar. Te las enviamos en 24-48 horas.',
+  },
+  {
+    slug: 'jaen',
+    name: 'Jaén',
+    province: 'Jaén',
+    region: 'Andalucía',
+    deliveryTime: '24h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Jaén | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Jaén. Envío 24h desde Córdoba. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Jaén',
+    introText: 'Jaén, tierra de olivos y castillos, tiene un patrimonio de viviendas donde abundan los azulejos clásicos que ya cumplieron su ciclo. Ya sea en la capital, en Linares, Úbeda o Baeza, las placas decorativas SPC de ObraFácil te permiten renovar cualquier estancia sin obra. Al estar tan cerca de nuestro almacén en Córdoba, el envío llega en 24 horas. Perfectas para esos cortijos que estás rehabilitando o para darle un aire nuevo al piso de toda la vida en el centro. Efecto piedra travertino para ambientes rústicos o mármol blanco para un toque contemporáneo.',
+  },
+  {
+    slug: 'cadiz',
+    name: 'Cádiz',
+    province: 'Cádiz',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Cádiz | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Cádiz. Envío 24-48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Cádiz',
+    introText: 'Cádiz, la ciudad más antigua de Occidente, y toda su provincia — desde Jerez hasta Algeciras, pasando por El Puerto, Chiclana o Sanlúcar — tiene viviendas junto al mar donde la humedad castiga las paredes. Las placas SPC de ObraFácil son 100% impermeables: perfectas para baños, cocinas y cualquier estancia expuesta a la brisa marina. Se instalan sobre el azulejo existente sin necesidad de obra. Envío 24-48h desde Córdoba. Nuestro acabado efecto cemento gris está siendo el favorito de los locales comerciales de la zona.',
+  },
+  {
+    slug: 'almeria',
+    name: 'Almería',
+    province: 'Almería',
+    region: 'Andalucía',
+    deliveryTime: '48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Almería | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Almería. Envío 48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Almería',
+    introText: 'Almería, con su clima desértico y sus más de 3.000 horas de sol al año, es perfecta para las placas SPC: un material que no se deforma ni decolora con la radiación solar. Tanto si estás renovando un cortijo en el Cabo de Gata, un piso en la Vega de Acá o un apartamento turístico en Roquetas de Mar, nuestras placas decorativas se instalan sin obra sobre cualquier superficie. Efecto mármol, piedra natural o madera — todo impermeable y resistente al clima almeriense. Envío en 48 horas desde nuestro almacén.',
+  },
+  {
+    slug: 'huelva',
+    name: 'Huelva',
+    province: 'Huelva',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Huelva | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Huelva. Envío 24-48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Huelva',
+    introText: 'Huelva, entre Doñana y la frontera portuguesa, tiene un mercado de viviendas donde la reforma sin obra está ganando terreno rápidamente. Ya sea en la capital, en Isla Cristina, Punta Umbría o Lepe, las placas SPC de ObraFácil se adaptan a cualquier estancia. Son 100% impermeables — ideales para los baños de esos apartamentos de playa que sufren la humedad todo el año. Envío en 24-48 horas. Te asesoramos por WhatsApp: mándanos una foto de tu pared y te decimos exactamente cuántas placas necesitas y cómo cortarlas.',
+  },
+  {
+    slug: 'madrid',
+    name: 'Madrid',
+    province: 'Madrid',
+    region: 'Comunidad de Madrid',
+    deliveryTime: '48-72h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Madrid | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Madrid. Envío 48-72h desde Andalucía. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Madrid',
+    introText: 'Madrid, con sus millones de pisos desde Chamberí hasta Vallecas, pasando por Getafe, Alcorcón o Tres Cantos, es el mayor mercado de reformas de España. Y muchos madrileños ya han descubierto que no hace falta gastar miles de euros ni sufrir semanas de obra para renovar un baño o una cocina. Las placas SPC de ObraFácil se envían desde nuestro almacén en Andalucía en 48-72 horas. Mismo producto que encuentras en grandes superficies, a precio de almacén directo. Cortamos a medida según tus necesidades.',
+  },
+  {
+    slug: 'marbella',
+    name: 'Marbella',
+    province: 'Málaga',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Marbella | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Marbella. Envío 24-48h. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Marbella',
+    introText: 'Marbella, sinónimo de lujo en la Costa del Sol, demanda acabados premium sin el precio premium de una reforma completa. Las placas SPC efecto mármol Calacatta, Marquina negro u ónix turquesa de ObraFácil ofrecen ese acabado de alta gama a una fracción del coste. Perfectas para villas en la Milla de Oro, apartamentos en Puerto Banús o pisos en San Pedro de Alcántara. Se instalan sobre cualquier superficie sin obra — ideal para propiedades de alquiler vacacional que necesitan renovarse rápido entre temporadas. Envío 24-48h.',
+  },
+  {
+    slug: 'jerez',
+    name: 'Jerez de la Frontera',
+    province: 'Cádiz',
+    region: 'Andalucía',
+    deliveryTime: '24-48h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Jerez | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Jerez de la Frontera. Envío 24-48h. Precios de almacén, corte a medida gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Jerez de la Frontera',
+    introText: 'Jerez, la ciudad del vino y los caballos, tiene un parque de viviendas variado: desde las casas señoriales del centro hasta los pisos de barriadas como La Plata, Federico Mayo o Picadueña. Muchos de estos hogares tienen baños y cocinas con azulejos de hace décadas. Con las placas decorativas SPC de ObraFácil los renovás en una tarde, sin romper un solo azulejo. Pegás la placa encima y listo — así de fácil. Envío 24-48h desde Córdoba. El acabado efecto piedra travertino queda espectacular en las cocinas jerezanas de estilo mediterráneo.',
+  },
+  {
+    slug: 'lucena',
+    name: 'Lucena',
+    province: 'Córdoba',
+    region: 'Andalucía',
+    deliveryTime: '24h',
+    isWarehouse: false,
+    metaTitle: 'Placas Decorativas en Lucena | Revestimientos SPC Sin Obra | ObraFácil',
+    metaDescription: 'Compra placas decorativas y revestimientos SPC en Lucena. Envío 24h desde Córdoba. Precios de almacén, corte a medida, asesoramiento gratis por WhatsApp.',
+    h1: 'Placas Decorativas y Revestimientos SPC en Lucena',
+    introText: 'Lucena, capital del mueble y el frío industrial de Córdoba, conoce bien la fabricación y los acabados de calidad. Por eso cada vez más lucentinos eligen las placas SPC de ObraFácil: un producto fabricado con +70% piedra caliza que ofrece acabados de mármol, piedra y madera a precio de almacén. Al estar en la misma provincia, el envío es en 24 horas. Ideales para renovar los baños de esas viviendas del centro, los pisos de nueva construcción en la zona de la estación, o los locales comerciales de la Calle del Peso.',
+  },
+];
+
+export function getCityBySlug(slug: string): City | undefined {
+  return cities.find(c => c.slug === slug);
+}
